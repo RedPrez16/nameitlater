@@ -4398,6 +4398,8 @@ input[type=button].btn-block {
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
+  margin-left:auto !important;
+  margin-right: auto !important;
 }
 .card > hr {
   margin-right: 0;
@@ -10342,4 +10344,8 @@ body {
 
 .footer {
   padding: 5rem 0;
+}
+.col-md-4 mb-3 mb-md-0{
+  margin-left: center;
+  margin-right: center;
 }
