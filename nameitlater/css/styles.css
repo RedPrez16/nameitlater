@@ -2431,6 +2431,7 @@ textarea.form-control {
   line-height: 1.5;
   border-radius: 0.25rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  align:right
 }
 @media (prefers-reduced-motion: reduce) {
   .btn {
@@ -2460,6 +2461,7 @@ fieldset:disabled a.btn {
   color: #fff;
   background-color: #64a19d;
   border-color: #64a19d;
+  align-button:right;
 }
 .btn-primary:hover {
   color: #fff;

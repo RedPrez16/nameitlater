@@ -1,0 +1,122 @@
+<!-- newsletter subscribe below here -->
+
+<script language="Javascript" type="text/javascript">
+var fieldstocheck = new Array();
+fieldnames = new Array();
+function checkform() {
+for (i=0;i<fieldstocheck.length;i++) {
+if (eval("document.subscribeform.elements['"+fieldstocheck[i]+"'].value") == "") {
+alert("Please enter your "+fieldnames[i]);
+eval("document.subscribeform.elements['"+fieldstocheck[i]+"'].focus()");
+return false;
+}
+}
+return true;
+}
+function addFieldToCheck(value,name) {
+fieldstocheck[fieldstocheck.length] = value;
+fieldnames[fieldnames.length] = name;
+}
+</script>
+
+<form method="post" action="http://www.yourdomain.com/lists/?p=subscribe&id=1" name="subscribeform">
+Email:<input type="text" name="email" value = ""><br>
+<script language="Javascript" type="text/javascript">addFieldToCheck("email","Email Address");</script>
+Name: <input type="text" name="attribute2" value = "">
+<script language="Javascript" type="text/javascript">addFieldToCheck("attribute2","Name");</script>
+<input type="hidden" name="list[1]" value="signup" />
+<input type="submit" name="subscribe" value="Subscribe" onClick="return checkform();">
+</form>
+
+
+<script language="Javascript" type="text/javascript">
+var fieldstocheck = new Array();
+fieldnames = new Array();
+function checkform() {
+for (i=0;i<fieldstocheck.length;i++) {
+if (eval("document.subscribeform.elements['"+fieldstocheck[i]+"'].value") == "") {
+alert("Please enter your "+fieldnames[i]);
+eval("document.subscribeform.elements['"+fieldstocheck[i]+"'].focus()");
+return false;
+}
+}
+return true;
+}
+function addFieldToCheck(value,name) {
+fieldstocheck[fieldstocheck.length] = value;
+fieldnames[fieldnames.length] = name;
+}
+</script>
+<div class="col-md-10 col-lg-8 mx-auto text-center">
+                            <form method="post" action="http://www.redprez16.com/lists/?p=subscribe&id=1" name="subscribeform">
+                            <script language="Javascript" type="text/javascript">addFieldToCheck("email","Email Address");</script>
+                        <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+                        <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
+                        <form class="form-inline d-flex">
+                            <input class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" type="email" placeholder="Enter email address..." />
+                            <script language="Javascript" type="text/javascript">addFieldToCheck("attribute2","Name");</script>
+                            <!---
+                            <button class="btn btn-primary mx-auto" type="submit">Subscribe</button>
+                             ---> 
+                            <input class"btn btn-primary mx-auto" type= "submit"  name="subscribe" value="Subscribe" onClick="return checkform();">
+                                                    
+                        </form>
+
+
+
+                        <script language="Javascript" type="text/javascript">
+                            var fieldstocheck = new Array();
+                            fieldnames = new Array();
+                            function checkform() {
+                            for (i=0;i<fieldstocheck.length;i++) {
+                            if (eval("document.subscribeform.elements['"+fieldstocheck[i]+"'].value") == "") {
+                            alert("Please enter your "+fieldnames[i]);
+                            eval("document.subscribeform.elements['"+fieldstocheck[i]+"'].focus()");
+                            return false;
+                            }
+                            }
+                            return true;
+                            }
+                            function addFieldToCheck(value,name) {
+                            fieldstocheck[fieldstocheck.length] = value;
+                            fieldnames[fieldnames.length] = name;
+                            }
+                            </script>
+                            <form method="post" action="http://mywebsite.com/newsletter/lists/?p=subscribe&id=1" name="subscribeform">
+                            <input type="text" name="email" value = "Email Address" size="15"><br>
+                            <script language="Javascript" type="text/javascript">addFieldToCheck("email","Email Address");</script>
+                            <input type="hidden" name="list[1]" value="signup" />
+                            <center><input type="submit" name="subscribe" value="Subscribe" onClick="return checkform();"></center>
+                            </form>
+
+
+
+                            
+                        <script language="Javascript" type="text/javascript">
+                            var fieldstocheck = new Array();
+                            fieldnames = new Array();
+                            function checkform() {
+                            for (i=0;i<fieldstocheck.length;i++) {
+                            if (eval("document.subscribeform.elements['"+fieldstocheck[i]+"'].value") == "") {
+                            alert("Please enter your "+fieldnames[i]);
+                            eval("document.subscribeform.elements['"+fieldstocheck[i]+"'].focus()");
+                            return false;
+                            }
+                            }
+                            return true;
+                            }
+                            function addFieldToCheck(value,name) {
+                            fieldstocheck[fieldstocheck.length] = value;
+                            fieldnames[fieldnames.length] = name;
+                            }
+                            </script>
+                            <form method="post" action="http://mywebsite.com/newsletter/lists/?p=subscribe&id=1" name="subscribeform"></form>
+                            <div class="col-md-10 col-lg-8 mx-auto text-center">
+                                <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+                                <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
+                                <form class="form-inline d-flex">
+                                    <input class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" type="email" placeholder="Enter email address..." />
+                                    <script language="Javascript" type="text/javascript">addFieldToCheck("Email","Email Address");</script>
+                                    <input type="hidden" name="list[1]" value="signup" />
+                                    <button class="btn btn-primary mx-auto" type="submit">Subscribe</button>
+                                </form>

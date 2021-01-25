@@ -1,0 +1,31 @@
+<link href="css/styles.css" rel="stylesheet" />
+<script language="Javascript" type="text/javascript">
+    var fieldstocheck = new Array();
+    fieldnames = new Array();
+    function checkform() {
+    for (i=0;i<fieldstocheck.length;i++) {
+    if (eval("document.subscribeform.elements['"+fieldstocheck[i]+"'].value") == "") {
+    alert("Please enter your "+fieldnames[i]);
+    eval("document.subscribeform.elements['"+fieldstocheck[i]+"'].focus()");
+    return false;
+    }
+    }
+    return true;
+    }
+    function addFieldToCheck(value,name) {
+    fieldstocheck[fieldstocheck.length] = value;
+    fieldnames[fieldnames.length] = name;
+    }
+    </script>
+        <form method="post" action="http://mywebsite.com/newsletter/lists/?p=subscribe&id=1" name="subscribeform"></form>
+<div class="col-md-10 col-lg-8 mx-auto text-center">
+    <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+    <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
+    <form class="form-inline d-flex">
+        <input class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" type="email" placeholder="Enter email address..." />
+        <button class="btn btn-primary mx-auto" type="submit">Subscribe</button>
+    </form>
+   --->
+
+
+   
