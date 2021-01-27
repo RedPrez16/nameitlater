@@ -103,52 +103,35 @@
                 </div>
             </div>
         </section>
-        <!-- Signup-->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
         <section class="signup-section" id="signup">
-    
             <div class="container">
-            
                 <div class="row">
-                    <link href="css/styles.css" rel="stylesheet" />
-                    <script language="Javascript" type="text/javascript">
-                        var fieldstocheck = new Array();
-                        fieldnames = new Array();
-                        function checkform() {
-                        for (i=0;i<fieldstocheck.length;i++) {
-                        if (eval("document.subscribeform.elements['"+fieldstocheck[i]+"'].value") == "") {
-                        alert("Please enter your "+fieldnames[i]);
-                        eval("document.subscribeform.elements['"+fieldstocheck[i]+"'].focus()");
-                        return false;
-                        }
-                        }
-                        return true;
-                        }
-                        function addFieldToCheck(value,name) {
-                        fieldstocheck[fieldstocheck.length] = value;
-                        fieldnames[fieldnames.length] = name;
-                        }
-                        </script>
-                        <!---->
                     <div class="col-md-10 col-lg-8 mx-auto text-center">
                         <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
                         <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
-                        <form method="post" action="http:/redprez16,/lists/?p=subscribe" name="newsletter">
-                        <form method="post" name="subscribeform">
-                            <input type="hidden" name="list[x]" value="signup">
-                            <input class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" type="email" placeholder="Enter email address..." />
-                        
-                            <button "btn btn-primary mx-auto" type="submit">Subscribe</button>
-                            <!--
-                            <div class="col-md-10 col-lg-8 mx-auto text-center">
-                                <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-                                <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
-                            
-                            <form method="post" name="subscribeform" id="subscribeform" enctype="multipart/form-data"> <table border=0> <tr> <td><div class="required"></div></td> <tr> <td><div class="col-md-10 col-lg-8 mx-auto text-center" class="required"></div></td> <td class="attributeinput"><input class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" type="email" placeholder="Enter email address..." email" value="" id="email" size="40"></td> </tr> </table> <input type=hidden name="htmlemail" value="1"> <input type="hidden" name="list[11]" value="signup" /> <input type="hidden" name="subscribe" value="subscribe"/> <button class="btn btn-primary mx-auto" type="submit">Subscribe</button><class='button' onclick="if (checkform()) {submitForm();} return false;" ></button> <div id="result" style="color: red;"></div>
-                            --->
-                        </form>
+                        <form class="form-inline d-flex"></form>
+<form method="post" name="subscribeform" id="subscribeform" enctype="multipart/form-data"> 
+    <table border=0> <tr> <td><div class="required"></div></td> <td class="attributeinput"> </td> </tr> </table> 
+        <input  class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" type="email" placeholder="Enter email address..." type=text name="email" value="" id="email" size="40"></input>
+        <input type=hidden name="htmlemail" value="1"> <input type="hidden" name="list[1]" value="signup" /></input>
+        <input type="hidden" name="subscribe" value="subscribe"/></input>
+        <button class="btn btn-primary mx-auto" class='button' onclick="if (checkform()) {submitForm();} return false;" >Subscribe</button> <div id="result" style="color: red;"></div> 
+    </form>
 
-
-                        
+<script type="text/javascript"> function checkform() { re = /^\w+([.-]?\w+)@\w+([.-]?\w+)(.\w{2,3})+$/; if (!(re.test(jQuery("#email").val()))) { jQuery("#result").empty().append("Please enter a valid email address"); jQuery("#email").focus(); return false; } return true; } function submitForm() { successMessage = 'Thank you for your registration. Please check your email to confirm.'; data = jQuery('#subscribeform').serialize(); jQuery.ajax( { type: 'POST', data: data, url: 'https://redprez16.com/lists/?p=subscribe&id=1', dataType: 'html', success: function (data, status, request) { jQuery("#result").empty().append(data != '' ? data : successMessage); jQuery('#email').val(''); }, error: function (request, status, error) { alert('Sorry, we were unable to process your subscription.'); } }); } </script>
+ <!-- Signup
+ <section class="signup-section" id="signup">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-lg-8 mx-auto text-center">
+                <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+                <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
+                <form class="form-inline d-flex">
+                    <input class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" type="email" placeholder="Enter email address..." />
+                    <button <style>align-self:center;</style> class="btn btn-primary mx-auto" type="submit">Subscribe</button>
+                </form>
+            -->
                     </div>
                 </div>
             </div>
